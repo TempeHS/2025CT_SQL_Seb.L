@@ -27,12 +27,12 @@ if [ "$(basename "$PWD")" = "utils" ]; then
 fi
 
 # Run the conversion
-python3 utils/md_to_pdf.py --directory "other formats/markdown_lessons" --output-dir "other formats/pdf_lessons" --verbose
+python3 utils/md_to_pdf.py --directory "other_formats/markdown_lessons" --output-dir "other_formats/pdf_lessons" --verbose
 
 echo ""
 echo "=================================================="
 echo "✓ Conversion Complete!"
 echo "=================================================="
 echo ""
-echo "📁 PDF files saved to: other formats/pdf_lessons/"
+echo "📁 PDF files saved to: other_formats/pdf_lessons/"
 echo ""

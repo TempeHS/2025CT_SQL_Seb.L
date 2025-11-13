@@ -18,7 +18,7 @@ This will automatically:
 
 - Check for required dependencies
 - Offer to install them if missing
-- Convert all lessons from `other formats/markdown_lessons/` to `other formats/pdf_lessons/`
+- Convert all lessons from `other_formats/markdown_lessons/` to `other_formats/pdf_lessons/`
 
 **Option 2: Manual Installation**
 
@@ -31,7 +31,7 @@ bash utils/install_dependencies.sh
 2. Convert lessons:
 
 ```bash
-python3 utils/md_to_pdf.py --directory "other formats/markdown_lessons" --output-dir "other formats/pdf_lessons"
+python3 utils/md_to_pdf.py --directory "other_formats/markdown_lessons" --output-dir "other_formats/pdf_lessons"
 ```
 
 ### Features
@@ -64,29 +64,29 @@ The installation script automatically installs:
 **Convert all lessons:**
 
 ```bash
-python3 utils/md_to_pdf.py --directory "other formats/markdown_lessons" --output-dir "other formats/pdf_lessons"
+python3 utils/md_to_pdf.py --directory "other_formats/markdown_lessons" --output-dir "other_formats/pdf_lessons"
 ```
 
 **Convert single file:**
 
 ```bash
-python3 utils/md_to_pdf.py --file "other formats/markdown_lessons/lesson1_instructions.md" --output-dir "other formats/pdf_lessons"
+python3 utils/md_to_pdf.py --file "other_formats/markdown_lessons/lesson1_instructions.md" --output-dir "other_formats/pdf_lessons"
 ```
 
 **Verbose output:**
 
 ```bash
-python3 utils/md_to_pdf.py --directory "other formats/markdown_lessons" --output-dir "other formats/pdf_lessons" --verbose
+python3 utils/md_to_pdf.py --directory "other_formats/markdown_lessons" --output-dir "other_formats/pdf_lessons" --verbose
 ```
 
 **Page break modes:**
 
 ```bash
 # Mode 1: Each ## heading starts a new page (default - good for lessons)
-python3 utils/md_to_pdf.py --directory "other formats/markdown_lessons" --page-break-mode sections
+python3 utils/md_to_pdf.py --directory "other_formats/markdown_lessons" --page-break-mode sections
 
 # Mode 2: Continuous layout (compact for printing)
-python3 utils/md_to_pdf.py --directory "other formats/markdown_lessons" --page-break-mode continuous
+python3 utils/md_to_pdf.py --directory "other_formats/markdown_lessons" --page-break-mode continuous
 ```
 
 ### Troubleshooting

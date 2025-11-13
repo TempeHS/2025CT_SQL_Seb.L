@@ -674,8 +674,8 @@ educational content styling.
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="./other formats/pdf_lessons",
-        help="Output directory for PDF files (default: ./other formats/pdf_lessons)",
+        default="./other_formats/pdf_lessons",
+        help="Output directory for PDF files (default: ./other_formats/pdf_lessons)",
     )
 
     # Utility options
@@ -724,7 +724,7 @@ educational content styling.
     if args.all:
         # Convert markdown lessons directory
         directories_to_search = [
-            Path("other formats/markdown_lessons"),  # Primary lessons directory
+            Path("other_formats/markdown_lessons"),  # Primary lessons directory
             Path("docs"),
             Path("samples"),
         ]
